@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2C3E50; /* A balanced dark blue/gray background */
+  color: #ECF0F1; /* Light text color for readability */
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #ECF0F1; /* Light color for headings */
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #34495E; /* Slightly lighter dark blue for the app container */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bot-collection, .your-bot-army {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.bot-card {
+  background-color: #ECF0F1; /* Light background for bot cards */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  word-wrap: break-word;
+  color: #2C3E50; /* Dark text color for contrast */
+}
+
+.bot-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bot-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #2C3E50;
+}
+
+.bot-card p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #34495E; /* Slightly darker text for the details */
+}
+
+.bot-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.enlist-button,
+.release-button,
+.delete-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.enlist-button {
+  background-color: #27AE60; /* Vibrant green for enlist */
+}
+
+.enlist-button:hover {
+  background-color: #2ECC71;
+}
+
+.release-button {
+  background-color: #2980B9; /* Bright blue for release */
+}
+
+.release-button:hover {
+  background-color: #3498DB;
+}
+
+.delete-button {
+  background-color: #C0392B; /* Strong red for delete */
+}
+
+.delete-button:hover {
+  background-color: #E74C3C;
+}
+
+.your-bot-army {
+  border: 2px solid #ECF0F1;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #34495E;
+  word-wrap: break-word;
+}
+
+.your-bot-army .bot-card {
+  background-color: #BDC3C7; /* Lighter gray for enlisted bots */
+}
+
+.bot-collection {
+  margin-top: 40px;
+}
+
+.app-header {
+  background-color: #2C3E50;
+  padding: 20px;
+  text-align: center;
+  color: #ECF0F1;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
