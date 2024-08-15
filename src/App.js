@@ -9,7 +9,7 @@ function App() {
   const [botArmy, setBotArmy] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/bots')
+    fetch('http://localhost:8001/bots')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -31,7 +31,7 @@ function App() {
   };
 
   const dischargeBot = (bot) => {
-    fetch(`http://localhost:3000/bots/${bot.id}`, {
+    fetch(`http://localhost:8001/bots/${bot.id}`, {
       method: 'DELETE',
     })
       .then(response => {
