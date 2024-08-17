@@ -9,7 +9,7 @@ function App() {
   const [botArmy, setBotArmy] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8001/bots')
+    fetch('https://json-server-vercel-rho-five.vercel.app/bots')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -31,7 +31,7 @@ function App() {
   };
 
   const dischargeBot = (bot) => {
-    fetch(`http://localhost:8001/bots/${bot.id}`, {
+    fetch(`https://json-server-vercel-rho-five.vercel.app/bots/${bot.id}`, {
       method: 'DELETE',
     })
       .then(response => {
